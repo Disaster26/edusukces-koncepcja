@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Szkolenia dla nauczycieli, korepetycje i wsparcie szkół w Bydgoszczy | EDU SUKCES</title>
+<meta name="description" content="EDU SUKCES z Bydgoszczy: nadzór pedagogiczny dla placówek niepublicznych, e-kursy na awans zawodowy nauczycieli, korepetycje z matematyki, fizyki i chemii oraz pomoc psychologiczna. Stacjonarnie i online.">
+<meta name="theme-color" content="#028090">
+<link rel="icon" href="img/logo-192.png">
+<link rel="preload" href="fonts/jost-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0-00FF,U+2013-2026,U+20AC}
+@font-face{font-family:Jost;font-weight:300 700;font-display:swap;src:url(fonts/jost-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+@font-face{font-family:Figtree;font-weight:400 700;font-display:swap;src:url(fonts/figtree-rdzen.woff2) format("woff2");unicode-range:U+0020-007E,U+00A0,U+00A9,U+00AB,U+00B0,U+00B7,U+00BB,U+00D3,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:Figtree;font-weight:400 700;font-display:swap;src:url(fonts/figtree-pl.woff2) format("woff2");unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+:root{--sun:#FDC500;--teal:#028090;--teal-d:#024F59;--teal-dd:#013A42;--green:#17B315;--ink:#14272B;--muted:#4A5D61;--grey:#F2F5F6;--line:#DCE4E6;--w:1200px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:17px/1.6 Figtree,system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:Jost,system-ui,sans-serif;line-height:1.15;margin:0;font-weight:600;letter-spacing:-.01em}
+h2{font-size:clamp(30px,3.6vw,46px)}
+h3{font-size:23px}
+p{margin:0 0 14px}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:10px;font:600 17px/1 Jost,sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background-color .15s ease}
+.btn:active{transform:scale(.97)}
+.btn-sun{background:var(--sun);color:var(--teal-dd)}
+.btn-sun:hover{background:#ffd42e}
+.btn-line{border-color:rgba(255,255,255,.75);color:#fff}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:#037684}
+/* naglowek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:28px;height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex:none}
+.brand img{width:48px;height:48px}
+.brand span{font:700 20px/1 Jost,sans-serif;color:var(--green);letter-spacing:.02em}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font:500 16px/1 Jost,sans-serif;color:var(--ink);padding:8px 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a.on{border-color:var(--sun)}
+.tel-top{font:600 16px/1 Jost,sans-serif;text-decoration:none;color:var(--teal);white-space:nowrap}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:0;background:none;padding:11px;cursor:pointer}
+.burger i{display:block;height:2px;background:var(--ink);margin:6px 0;border-radius:2px;transition:transform .2s ease,opacity .2s ease}
+.menu-open .burger i:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.menu-open .burger i:nth-child(2){opacity:0}
+.menu-open .burger i:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+/* hero */
+.hero{background:var(--teal);color:#fff;position:relative;overflow:hidden;min-height:calc(100svh - 68px);display:flex;flex-direction:column}
+.hero .wrap{position:relative;z-index:2;flex:1;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:40px;padding-top:48px;padding-bottom:40px;width:100%}
+.hero h1{font-size:clamp(40px,4.6vw,66px);font-weight:600;max-width:14ch}
+.hero .lead{font-size:clamp(17px,1.35vw,20px);max-width:36em;margin:22px 0 0;color:#E6F4F5}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.mark{width:100%;max-width:600px;justify-self:end;aspect-ratio:650/640}
+.mark svg{width:100%;height:100%;overflow:visible}
+.ray{transform-box:view-box;transform-origin:330px 285px;animation:ray 1.1s cubic-bezier(.2,.7,.2,1) both}
+@keyframes ray{from{opacity:0;transform:scale(.86)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.ray{animation:none}html{scroll-behavior:auto}}
+.drogi{position:relative;z-index:2;border-top:1px solid rgba(255,255,255,.22)}
+.drogi .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding-top:0;padding-bottom:0}
+.drogi a{display:block;padding:20px 18px 22px 0;text-decoration:none;color:#fff;font:500 17px/1.3 Jost,sans-serif}
+.drogi a b{display:block;color:var(--sun);font-weight:600;font-size:19px;margin-bottom:4px}
+.drogi a:hover b{text-decoration:underline}
+/* sekcje */
+section{scroll-margin-top:68px}
+.sec{padding:96px 0}
+.sec-grey{background:var(--grey)}
+.head{max-width:760px;margin-bottom:44px}
+.head p{color:var(--muted);font-size:18px;margin-top:16px}
+.pages{display:block;width:120px;height:26px;margin-bottom:18px}
+/* karty odbiorcow */
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{display:block;padding:0;border:0;cursor:zoom-in;background:#ddd;aspect-ratio:12/5;width:100%}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .bd{padding:26px 28px 28px;position:relative;flex:1;display:flex;flex-direction:column}
+.card h3{padding-right:44px}
+.card .petal{position:absolute;right:24px;top:22px;width:28px;height:36px}
+.card p{color:var(--muted);margin-top:12px}
+.card ul{margin:0 0 18px;padding:0;list-style:none}
+.card li{padding:7px 0 7px 22px;position:relative;border-top:1px solid var(--line);font-size:16px}
+.card li::before{content:"";position:absolute;left:2px;top:15px;width:9px;height:9px;border-radius:50%;background:var(--sun)}
+.card .more{margin-top:auto;font:600 16px/1 Jost,sans-serif;color:var(--teal);text-decoration:none}
+.card .more:hover{text-decoration:underline}
+/* kursy */
+.kursy{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.kursy .txt p{color:var(--muted)}
+.inside{margin:22px 0 26px;padding:0;list-style:none;columns:2;column-gap:22px}
+.inside li{break-inside:avoid;padding:6px 0 6px 20px;position:relative;font-size:16px}
+.inside li::before{content:"";position:absolute;left:0;top:14px;width:10px;height:2px;background:var(--teal)}
+.car{position:relative}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:2px 2px 6px;cursor:grab;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.track.drag{cursor:grabbing;scroll-snap-type:none}
+.prod{flex:0 0 calc(50% - 9px);scroll-snap-align:start;background:#fff;border-radius:14px;border:1px solid var(--line);overflow:hidden;display:flex;flex-direction:column}
+.prod .ph{border:0;padding:0;background:#fff;cursor:zoom-in;aspect-ratio:1/1;width:100%}
+.prod .ph img{width:100%;height:100%;object-fit:cover}
+.prod .bd{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1;border-top:1px solid var(--line)}
+.prod h3{font-size:19px;font-weight:500}
+.prod .price{font:700 26px/1 Jost,sans-serif;color:var(--teal);margin:14px 0 16px}
+.prod .btn{min-height:46px;font-size:16px;margin-top:auto}
+.car-nav{display:flex;align-items:center;gap:10px;margin-top:16px}
+.car-nav button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--teal);background:#fff;color:var(--teal);font:600 20px/1 Jost,sans-serif;cursor:pointer}
+.car-nav button:disabled{opacity:.35;cursor:default}
+.car-nav span{font-size:15px;color:var(--muted);margin-left:6px}
+.note{font-size:14px;color:var(--muted);margin-top:10px}
+/* korepetycje */
+.kor{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.subj{display:flex;flex-direction:column;border-top:2px solid var(--ink)}
+.subj div{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}
+.subj b{font:600 clamp(28px,3vw,40px)/1 Jost,sans-serif}
+.subj span{color:var(--muted);font-size:16px;text-align:right}
+.facts{margin:22px 0 0;padding:0;list-style:none}
+.facts li{padding:12px 0 12px 30px;position:relative;border-bottom:1px solid var(--line)}
+.facts li svg{position:absolute;left:0;top:14px;width:18px;height:22px}
+.chem{margin-top:26px;background:var(--grey);border-left:4px solid var(--sun);padding:20px 22px;border-radius:0 12px 12px 0}
+.chem p{margin:0}
+/* o firmie */
+.firma{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.firma .ph{border:0;padding:0;cursor:zoom-in;border-radius:14px;overflow:hidden;aspect-ratio:2/1;width:100%;max-width:800px}
+.firma .ph img{width:100%;height:100%;object-fit:cover}
+.firma p{color:var(--muted);font-size:18px}
+blockquote{margin:28px 0 0;padding:0;font:500 22px/1.4 Jost,sans-serif;color:var(--ink)}
+blockquote cite{display:block;font:400 15px/1.4 Figtree,sans-serif;color:var(--muted);margin-top:8px;font-style:normal}
+/* kontakt */
+.kontakt{background:var(--teal-d);color:#fff}
+.kontakt h2{color:#fff}
+.kgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.dane{font-size:18px}
+.dane h3{color:var(--sun);font-size:20px;margin:28px 0 8px}
+.dane p{color:#DDEFF1;margin:0 0 6px}
+.dane a{color:#fff;text-decoration:none;font-weight:600}
+.dane a:hover{text-decoration:underline}
+.big-tel{display:block;font:600 30px/1.2 Jost,sans-serif;color:#fff;text-decoration:none;margin:4px 0}
+.mapa{margin-top:26px;border-radius:12px;overflow:hidden;background:var(--teal-dd);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center}
+.mapa button{background:none;border:1.5px solid rgba(255,255,255,.6);color:#fff;border-radius:10px;padding:14px 20px;font:600 16px/1 Jost,sans-serif;cursor:pointer}
+.mapa iframe{width:100%;height:100%;border:0}
+form{background:#fff;color:var(--ink);border-radius:16px;padding:32px}
+form h3{margin-bottom:6px}
+form .sub{color:var(--muted);font-size:16px;margin-bottom:20px}
+label{display:block;font:500 15px/1.3 Jost,sans-serif;margin:14px 0 6px}
+input,select,textarea{width:100%;font:16px/1.4 Figtree,sans-serif;padding:13px 14px;border:1.5px solid #C7D3D6;border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(2,128,144,.18)}
+textarea{min-height:120px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.zgoda{display:flex;gap:10px;align-items:flex-start;font:400 14px/1.45 Figtree,sans-serif;color:var(--muted);margin:16px 0 18px}
+.zgoda input{width:20px;height:20px;flex:none;margin-top:1px}
+form .btn{width:100%}
+.ok{display:none;margin-top:14px;padding:14px;border-radius:10px;background:#E8F6EC;color:#14532D;font-size:15px}
+/* stopka */
+footer{background:var(--teal-dd);color:#A9C9CD;padding:34px 0;font-size:15px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center;justify-content:space-between}
+footer b{color:#fff;font-weight:600}
+footer a{color:#fff}
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(1,30,35,.94);display:none;align-items:center;justify-content:center;padding:56px 12px}
+.lb.on{display:flex}
+.lb img{max-width:100%;max-height:100%;object-fit:contain;border-radius:6px}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:48px;height:48px;border-radius:50%;font:400 26px/1 Jost,sans-serif;cursor:pointer}
+.lb .x{top:10px;right:10px}
+.lb .pv{left:10px;top:50%;margin-top:-24px}
+.lb .nx{right:10px;top:50%;margin-top:-24px}
+.lb .cap{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#D5E8EA;font-size:15px;padding:0 60px}
+/* wylinka */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* responsywnosc */
+@media (max-width:1080px){.nav{gap:18px}.tel-top{display:none}}
+@media (max-width:900px){
+ .nav{display:none;position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;gap:0;padding:8px 20px 22px;border-bottom:1px solid var(--line);box-shadow:0 14px 30px rgba(0,0,0,.08)}
+ .menu-open .nav{display:flex}
+ .nav a{padding:15px 0;border-bottom:1px solid var(--line);font-size:18px}
+ .nav a.on{border-color:var(--line);color:var(--teal)}
+ .nav .tel-m{display:block;color:var(--teal);font-weight:600;border:0}
+ .burger{display:block}
+ .cards,.kursy,.kor,.firma,.kgrid{grid-template-columns:minmax(0,1fr);gap:36px}
+ .prod{flex-basis:calc(50% - 9px)}
+}
+@media (min-width:901px){.nav .tel-m{display:none}}
+@media (max-width:760px){
+ .top .wrap{height:62px}
+ section{scroll-margin-top:62px}
+ .nav{top:62px}
+ .hero{min-height:calc(100svh - 62px)}
+ .hero .wrap{grid-template-columns:1fr;gap:0;padding-top:18px;padding-bottom:28px;align-content:center}
+ .mark{order:-1;width:min(46vw,26svh);justify-self:start;margin:0 0 14px -4px}
+ .hero h1{font-size:clamp(29px,8.2vw,40px)}
+ .hero .lead{font-size:16.5px;margin-top:14px}
+ .hero .cta{margin-top:24px;gap:10px}
+ .hero .cta .btn{flex:1 1 0;padding:0 12px;font-size:16px;min-height:50px}
+ .drogi{display:none}
+ .sec{padding:68px 0}
+ .card .bd{padding:22px 20px 24px}
+ .inside{columns:1}
+ .prod{flex-basis:84%}
+ .subj span{font-size:15px}
+ form{padding:24px 18px}
+ .row2{grid-template-columns:1fr}
+ footer .wrap{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+ footer .wrap>span:first-child{grid-column:1/-1}
+}
+@media (max-width:370px){.hero .cta .btn{font-size:15px;padding:0 8px}.brand span{font-size:18px}}
+@media (min-width:1700px){:root{--w:1360px}}
+@media (min-width:761px){.mark{max-width:min(600px,calc(100svh - 250px))}}
+@media (min-width:761px) and (max-height:820px){.hero .wrap{padding-top:28px;padding-bottom:24px}.drogi a{padding:14px 18px 16px 0}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <defs>
+  <symbol id="petal" viewBox="0 0 28 36"><path transform="rotate(35 14 18)" d="M14 33C5 25 3 13 14 3c11 10 9 22 0 30z" fill="none" stroke="#FDC500" stroke-width="3" stroke-linejoin="round"/></symbol>
+  <symbol id="pages" viewBox="0 0 120 26"><g fill="none" stroke="#028090" stroke-width="3.2" stroke-linecap="round"><path d="M118 24C80 22 40 16 2 4"/><path d="M118 24C82 21 44 19 4 13"/><path d="M118 24C84 22 48 22 8 21"/></g></symbol>
+ </defs>
+</svg>
+
+<header class="top" id="top">
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="EDU SUKCES - strona główna"><img src="img/logo-96.webp" srcset="img/logo-96.webp 1x,img/logo-192.webp 2x,img/logo-360.webp 3x" width="48" height="48" alt="Logo EDU SUKCES"><span>EDU SUKCES</span></a>
+  <nav class="nav" id="nav" aria-label="Menu główne">
+   <a href="#oferta">Oferta</a>
+   <a href="#kursy">Kursy dla nauczycieli</a>
+   <a href="#korepetycje">Korepetycje</a>
+   <a href="#o-firmie">O firmie</a>
+   <a href="https://sklep.edusukces.com/" rel="noopener">Sklep</a>
+   <a href="#kontakt">Kontakt</a>
+   <a class="tel-m" href="tel:+48602335577">Zadzwoń: 602 33 55 77</a>
+  </nav>
+  <a class="tel-top" href="tel:+48602335577">602 33 55 77</a>
+  <button class="burger" id="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+ </div>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="h1">
+ <div class="wrap">
+  <div class="txt">
+   <h1 id="h1">Wsparcie dla nauczycieli, uczniów i&nbsp;rodziców</h1>
+   <p class="lead">W&nbsp;Bydgoszczy i&nbsp;online: nadzór pedagogiczny dla placówek niepublicznych, e-kursy na awans zawodowy, korepetycje z&nbsp;matematyki, fizyki i&nbsp;chemii oraz pomoc psychologiczna.</p>
+   <div class="cta">
+    <a class="btn btn-sun" href="#kontakt">Napisz do nas</a>
+    <a class="btn btn-line" href="tel:+48602335577">602 33 55 77</a>
+   </div>
+  </div>
+  <div class="mark" aria-hidden="true">
+   <svg viewBox="-10 -40 650 640"><g class="ray" fill="none" stroke="#FDC500" stroke-width="9" stroke-linejoin="round"><path transform="rotate(-70 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(-45 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(-20 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(5 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(30 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(55 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(80 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(105 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/><path transform="rotate(130 330 285)" d="M330 85 C360 52 362 10 330 -28 C298 10 300 52 330 85Z"/></g><circle cx="330" cy="285" r="178" fill="#FDC500"/><path d="M530 402 C440 362 217 236 97 306 A205 205 0 0 0 300 540 C385 540 470 490 530 402Z" fill="#fff"/><g fill="none" stroke="#028090" stroke-width="9" stroke-linecap="round"><path d="M530 402 C440 372 217 345 107 405"/><path d="M530 402 C440 382 258 432 158 482"/><path d="M530 402 C440 392 317 486 227 526"/></g></svg>
+  </div>
+ </div>
+ <nav class="drogi" aria-label="Dla kogo">
+  <div class="wrap">
+   <a href="#dyrektorzy"><b>Dyrektorzy placówek</b>nadzór pedagogiczny, dokumenty</a>
+   <a href="#kursy"><b>Nauczyciele</b>e-kursy na awans zawodowy</a>
+   <a href="#korepetycje"><b>Uczniowie</b>matematyka, fizyka, chemia</a>
+   <a href="#rodzice"><b>Rodzice</b>konsultacje psychologiczne</a>
+  </div>
+ </nav>
+</section>
+
+<section class="sec" id="oferta" aria-labelledby="h-oferta">
+ <div class="wrap">
+  <div class="head">
+   <svg class="pages" aria-hidden="true"><use href="#pages"/></svg>
+   <h2 id="h-oferta">Cztery grupy, jedna firma</h2>
+   <p>EDU SUKCES to grupa nauczycieli-specjalistów z&nbsp;Bydgoszczy. Część z&nbsp;nas przygotowuje szkolenia dla nauczycieli, część uczy przedmiotów ścisłych. Pracujemy stacjonarnie i&nbsp;online, z&nbsp;osobami z&nbsp;całej Polski.</p>
+  </div>
+  <div class="cards">
+   <article class="card" id="dyrektorzy">
+    <button class="ph" data-lb="img/katalog-1600.webp" data-cap="Dokumentacja placówki"><img src="img/katalog-1600.webp" width="1600" height="667" loading="lazy" alt="Szuflady katalogu kartkowego"></button>
+    <div class="bd">
+     <svg class="petal" aria-hidden="true"><use href="#petal"/></svg>
+     <h3>Dla dyrektorów i organów prowadzących</h3>
+     <p>Wsparcie w&nbsp;nadzorze pedagogicznym przy otwieraniu przedszkola, szkoły lub placówki niepublicznej i&nbsp;w&nbsp;czasie jej działania.</p>
+     <ul><li>wzory dokumentów do prowadzenia placówki</li><li>dokumenty do pełnienia nadzoru pedagogicznego</li><li>szkolenia dla kadry, wsparcie dyrektora</li></ul>
+     <a class="more" href="#kontakt">Zakres omawiamy indywidualnie</a>
+    </div>
+   </article>
+   <article class="card">
+    <button class="ph" data-lb="img/ksiazka-1600.webp" data-cap="Kursy dla nauczycieli"><img src="img/ksiazka-1600.webp" width="1600" height="667" loading="lazy" alt="Otwarta książka, okulary i ołówek"></button>
+    <div class="bd">
+     <svg class="petal" aria-hidden="true"><use href="#petal"/></svg>
+     <h3>Dla nauczycieli</h3>
+     <p>E-kursy na kolejne stopnie awansu zawodowego i&nbsp;kursy doskonalące, stacjonarnie albo online, bez dojazdów.</p>
+     <ul><li>pakiet plików PDF i&nbsp;Word do wykorzystania</li><li>przepisy, terminy, rozmowa kwalifikacyjna i&nbsp;egzamin</li><li>na życzenie zaświadczenie o&nbsp;ukończeniu i&nbsp;faktura</li></ul>
+     <a class="more" href="#kursy">Zobacz e-kursy</a>
+    </div>
+   </article>
+   <article class="card">
+    <button class="ph" data-lb="img/kredki-1600.webp" data-cap="Korepetycje"><img src="img/kredki-1600.webp" width="1600" height="667" loading="lazy" alt="Kolorowe kredki ułożone w gwiazdę"></button>
+    <div class="bd">
+     <svg class="petal" aria-hidden="true"><use href="#petal"/></svg>
+     <h3>Dla uczniów</h3>
+     <p>Korepetycje z&nbsp;matematyki, fizyki i&nbsp;chemii dla szkół podstawowych i&nbsp;ponadpodstawowych, indywidualnie lub w&nbsp;małych grupach.</p>
+     <ul><li>bieżący materiał, sprawdziany, zadania domowe</li><li>egzamin ósmoklasisty i&nbsp;matura</li><li>także uczniowie w&nbsp;edukacji domowej</li></ul>
+     <a class="more" href="#korepetycje">Więcej o&nbsp;korepetycjach</a>
+    </div>
+   </article>
+   <article class="card" id="rodzice">
+    <button class="ph" data-lb="img/stokrotki-1600.webp" data-cap="Pomoc psychologiczna"><img src="img/stokrotki-1600.webp" width="1600" height="667" loading="lazy" alt="Stokrotki na tle otwartej książki"></button>
+    <div class="bd">
+     <svg class="petal" aria-hidden="true"><use href="#petal"/></svg>
+     <h3>Dla rodziców</h3>
+     <p>Konsultacje indywidualne i&nbsp;terapie grupowe dla dzieci i&nbsp;młodzieży, online albo w&nbsp;gabinecie przy ul. Wojska Polskiego 65 (pok. 13) w&nbsp;Bydgoszczy.</p>
+     <ul><li>problemy szkolne, rodzinne i&nbsp;rówieśnicze</li><li>problemy rozwojowe i&nbsp;wychowawcze</li><li>sytuacje kryzysowe</li></ul>
+     <a class="more" href="#kontakt">Umów konsultację</a>
+    </div>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section class="sec sec-grey" id="kursy" aria-labelledby="h-kursy">
+ <div class="wrap kursy">
+  <div class="txt">
+   <svg class="pages" aria-hidden="true"><use href="#pages"/></svg>
+   <h2 id="h-kursy">E-kursy na awans zawodowy nauczyciela</h2>
+   <p style="margin-top:16px">Syntetyczne kursy na poszczególne stopnie awansu: szkolenie w&nbsp;plikach PDF i&nbsp;pliki Word do wykorzystania od razu. Kupujesz w&nbsp;sklepie, uczysz się, kiedy chcesz.</p>
+   <ul class="inside">
+    <li>aktualne przepisy prawa</li><li>terminy awansowe</li><li>przebieg rozmowy kwalifikacyjnej i&nbsp;egzaminu</li><li>często zadawane pytania</li><li>przygotowanie dokumentów</li><li>pisanie sprawozdania</li><li>czasowniki operacyjne</li><li>praktyczne porady</li>
+   </ul>
+   <a class="btn btn-teal" href="https://sklep.edusukces.com/" rel="noopener">Przejdź do sklepu</a>
+  </div>
+  <div class="car" data-car>
+   <div class="track">
+    <article class="prod">
+     <button class="ph" data-lb="img/kurs-mianowany-800.webp" data-cap="Nauczyciel kontraktowy na nauczyciela mianowanego"><img src="img/kurs-mianowany-400.webp" srcset="img/kurs-mianowany-400.webp 400w,img/kurs-mianowany-800.webp 800w" sizes="(max-width:760px) 84vw,360px" width="800" height="800" loading="lazy" alt="E-kurs awans zawodowy nauczycieli na ekranie laptopa"></button>
+     <div class="bd"><h3>Nauczyciel kontraktowy na nauczyciela mianowanego</h3><div class="price">59,00 zł</div><a class="btn btn-teal" href="https://sklep.edusukces.com/nauczyciele/2-nauczyciel-kontraktowy-na-nauczyciela-mianowanego.html" rel="noopener">Kup w&nbsp;sklepie</a></div>
+    </article>
+    <article class="prod">
+     <button class="ph" data-lb="img/kuchenne-laboratorium-800.webp" data-cap="Metoda projektu &quot;W kuchennym laboratorium&quot;"><img src="img/kuchenne-laboratorium-400.webp" srcset="img/kuchenne-laboratorium-400.webp 400w,img/kuchenne-laboratorium-800.webp 800w" sizes="(max-width:760px) 84vw,360px" width="800" height="800" loading="lazy" alt="Prezentacja W kuchennym laboratorium na ekranie"></button>
+     <div class="bd"><h3>Metoda projektu „W&nbsp;kuchennym laboratorium”</h3><div class="price">67,00 zł</div><a class="btn btn-teal" href="https://sklep.edusukces.com/strona-glowna/5-metoda-projektu-w-kuchennym-laboratorium.html" rel="noopener">Kup w&nbsp;sklepie</a></div>
+    </article>
+    <article class="prod">
+     <button class="ph" data-lb="img/kurs-dyplomowany-800.webp" data-cap="Nauczyciel mianowany na nauczyciela dyplomowanego"><img src="img/kurs-dyplomowany-400.webp" srcset="img/kurs-dyplomowany-400.webp 400w,img/kurs-dyplomowany-800.webp 800w" sizes="(max-width:760px) 84vw,360px" width="800" height="800" loading="lazy" alt="E-kurs awans zawodowy nauczycieli"></button>
+     <div class="bd"><h3>Nauczyciel mianowany na nauczyciela dyplomowanego</h3><div class="price">69,00 zł</div><a class="btn btn-teal" href="https://sklep.edusukces.com/nauczyciele/3-nauczyciel-mianowany-na-nauczyciela-dyplomowanego.html" rel="noopener">Kup w&nbsp;sklepie</a></div>
+    </article>
+    <article class="prod">
+     <button class="ph" data-lb="img/poradnik-rodzice-800.webp" data-cap="Poradnik dla rodziców dzieci z niepełnosprawnością"><img src="img/poradnik-rodzice-400.webp" srcset="img/poradnik-rodzice-400.webp 400w,img/poradnik-rodzice-800.webp 800w" sizes="(max-width:760px) 84vw,360px" width="800" height="800" loading="lazy" alt="Okładka poradnika Dziecko z niepełnosprawnością w szkole"></button>
+     <div class="bd"><h3>Poradnik dla rodziców dzieci z&nbsp;niepełnosprawnością</h3><div class="price">29,00 zł</div><a class="btn btn-teal" href="https://sklep.edusukces.com/strona-glowna/7-poradnik-dla-rodzicow-dzieci-z-niepelnosprawnoscia.html" rel="noopener">Kup w&nbsp;sklepie</a></div>
+    </article>
+   </div>
+   <div class="car-nav"><button class="pv" aria-label="Poprzednie">&#8249;</button><button class="nx" aria-label="Następne">&#8250;</button><span class="cnt">1 / 4</span></div>
+   <p class="note">Ceny ze sklepu sklep.edusukces.com, stan na 21.11.2026.</p>
+  </div>
+ </div>
+</section>
+
+<section class="sec" id="korepetycje" aria-labelledby="h-kor">
+ <div class="wrap kor">
+  <div>
+   <svg class="pages" aria-hidden="true"><use href="#pages"/></svg>
+   <h2 id="h-kor">Korepetycje, po których przedmioty ścisłe przestają być czarną magią</h2>
+   <p style="margin-top:16px;color:var(--muted)">Nauczyciele dopasowują tempo i&nbsp;sposób pracy do ucznia, a&nbsp;z&nbsp;rodzicami jesteśmy w&nbsp;stałym kontakcie, żeby jak najlepiej odpowiedzieć na potrzeby dziecka.</p>
+   <ul class="facts">
+    <li><svg aria-hidden="true"><use href="#petal"/></svg>stacjonarnie w&nbsp;Bydgoszczy i&nbsp;online w&nbsp;całej Polsce</li>
+    <li><svg aria-hidden="true"><use href="#petal"/></svg>indywidualnie lub w&nbsp;niewielkich grupach, w&nbsp;roku szkolnym i&nbsp;na kursach wakacyjnych</li>
+    <li><svg aria-hidden="true"><use href="#petal"/></svg>zajęcia także dla uczniów w&nbsp;edukacji domowej</li>
+   </ul>
+  </div>
+  <div>
+   <div class="subj">
+    <div><b>Matematyka</b><span>szkoła podstawowa i&nbsp;ponadpodstawowa</span></div>
+    <div><b>Fizyka</b><span>sprawdziany, egzamin ósmoklasisty</span></div>
+    <div><b>Chemia</b><span>także przygotowanie do matury</span></div>
+   </div>
+   <div class="chem"><p>Chemię prowadzi egzaminator maturalny z&nbsp;chemii od 2006 roku i&nbsp;konstruktor zadań maturalnych, od kilkunastu lat przygotowujący uczniów do matury.</p></div>
+   <p style="margin-top:26px"><a class="btn btn-teal" href="#kontakt">Zapytaj o&nbsp;wolny termin</a></p>
+  </div>
+ </div>
+</section>
+
+<section class="sec sec-grey" id="o-firmie" aria-labelledby="h-firma">
+ <div class="wrap firma">
+  <button class="ph" data-lb="img/stare-ksiazki-1600.webp" data-cap="EDU SUKCES"><img src="img/stare-ksiazki-1600.webp" width="1600" height="800" loading="lazy" alt="Stare książki na półce"></button>
+  <div>
+   <svg class="pages" aria-hidden="true"><use href="#pages"/></svg>
+   <h2 id="h-firma">Nauczyciele, którzy uczą też nauczycieli</h2>
+   <p style="margin-top:16px">EDU SUKCES Sp. z o.o. to grupa nauczycieli-specjalistów. Część z&nbsp;nas pracuje w&nbsp;branży edukacyjnej i&nbsp;przygotowuje szkolenia dla nauczycieli, część udziela korepetycji z&nbsp;matematyki, fizyki i&nbsp;chemii. Wieloletnia praca z&nbsp;uczniami i&nbsp;nauczycielami to podstawa wszystkiego, co robimy.</p>
+   <blockquote>„Jeśli nie możesz robić wielkich rzeczy, rób rzeczy małe w&nbsp;wielki sposób.”<cite>Napoleon Hill</cite></blockquote>
+  </div>
+ </div>
+</section>
+
+<section class="sec kontakt" id="kontakt" aria-labelledby="h-kontakt">
+ <div class="wrap kgrid">
+  <div class="dane">
+   <h2 id="h-kontakt">Kontakt</h2>
+   <h3>Telefon</h3>
+   <a class="big-tel" href="tel:+48602335577">602 33 55 77</a>
+   <a class="big-tel" href="tel:+48537676821">537 67 68 21</a>
+   <h3>E-mail</h3>
+   <p><a href="mailto:kontakt@edusukces.com">kontakt@edusukces.com</a></p>
+   <h3>Siedziba</h3>
+   <p>EDU SUKCES Sp. z o.o.<br>ul. Adama Grzymały Siedleckiego 31/25<br>85-868 Bydgoszcz</p>
+   <h3>Gabinet psychologiczny</h3>
+   <p>ul. Wojska Polskiego 65, pok. 13, Bydgoszcz</p>
+   <div class="mapa" id="mapa"><button type="button" id="mapBtn">Pokaż na mapie Google</button></div>
+  </div>
+  <form id="form" novalidate>
+   <h3>Napisz do nas</h3>
+   <p class="sub">Odpowiemy mailowo albo telefonicznie, jak Ci wygodniej.</p>
+   <label for="f-kto">Kogo dotyczy wiadomość</label>
+   <select id="f-kto"><option>Nauczyciel: kursy i&nbsp;awans</option><option>Uczeń: korepetycje</option><option>Rodzic: konsultacja psychologiczna</option><option>Dyrektor: nadzór pedagogiczny</option></select>
+   <div class="row2">
+    <div><label for="f-imie">Imię i nazwisko</label><input id="f-imie" autocomplete="name"></div>
+    <div><label for="f-kontakt">E-mail lub telefon</label><input id="f-kontakt" autocomplete="email"></div>
+   </div>
+   <label for="f-msg">Wiadomość</label>
+   <textarea id="f-msg" placeholder="Np. klasa i przedmiot, stopień awansu albo krótki opis sprawy"></textarea>
+   <label class="zgoda"><input type="checkbox" id="f-zgoda">Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na wiadomość.</label>
+   <button class="btn btn-sun" type="submit">Wyślij wiadomość</button>
+   <div class="ok" id="ok">To podgląd strony, formularz nic nie wysyła. Na docelowej stronie wiadomość trafi na kontakt@edusukces.com.</div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span><b>EDU SUKCES Sp. z o.o.</b>, ul. Adama Grzymały Siedleckiego 31/25, 85-868 Bydgoszcz</span>
+  <span>© 2026 EDU SUKCES</span>
+  <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=edusukces.com&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+ </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Powiększone zdjęcie">
+ <img alt="">
+ <button class="x" aria-label="Zamknij">&times;</button>
+ <button class="pv" aria-label="Poprzednie">&#8249;</button>
+ <button class="nx" aria-label="Następne">&#8250;</button>
+ <div class="cap"></div>
+</div>
+
+<script>
+(function(){
+ // menu
+ var b=document.getElementById('burger'),nav=document.getElementById('nav');
+ b.addEventListener('click',function(){var o=document.body.classList.toggle('menu-open');b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu');});
+ nav.addEventListener('click',function(e){if(e.target.tagName==='A'){document.body.classList.remove('menu-open');b.setAttribute('aria-expanded','false');}});
+ // aktywna pozycja menu
+ var links=[].slice.call(nav.querySelectorAll('a[href^="#"]'));
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id);});}});},{rootMargin:'-45% 0px -50% 0px'});
+  ['oferta','kursy','korepetycje','o-firmie','kontakt'].forEach(function(id){io.observe(document.getElementById(id));});
+ }
+ // karuzela
+ document.querySelectorAll('[data-car]').forEach(function(c){
+  var t=c.querySelector('.track'),pv=c.querySelector('.car-nav .pv'),nx=c.querySelector('.car-nav .nx'),cnt=c.querySelector('.cnt'),items=t.children;
+  function step(){return items[0].getBoundingClientRect().width+18;}
+  function upd(){var i=Math.round(t.scrollLeft/step()),max=t.scrollWidth-t.clientWidth;var vis=Math.max(1,Math.round(t.clientWidth/step()));cnt.textContent=Math.min(items.length,i+vis)+' / '+items.length;pv.disabled=t.scrollLeft<4;nx.disabled=t.scrollLeft>max-4;}
+  pv.onclick=function(){t.scrollBy({left:-step(),behavior:'smooth'});};
+  nx.onclick=function(){t.scrollBy({left:step(),behavior:'smooth'});};
+  t.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd();
+  var down=false,sx=0,sl=0,moved=false;
+  t.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;moved=false;sx=e.clientX;sl=t.scrollLeft;});
+  window.addEventListener('pointermove',function(e){if(!down)return;var d=e.clientX-sx;if(Math.abs(d)>5){moved=true;t.classList.add('drag');}t.scrollLeft=sl-d;});
+  window.addEventListener('pointerup',function(){if(!down)return;down=false;t.classList.remove('drag');var i=Math.round(t.scrollLeft/step());t.scrollTo({left:i*step(),behavior:'smooth'});});
+  t.addEventListener('click',function(e){if(moved){e.preventDefault();e.stopPropagation();moved=false;}},true);
+  t.addEventListener('dragstart',function(e){e.preventDefault();});
+ });
+ // lightbox
+ var lb=document.getElementById('lb'),li=lb.querySelector('img'),cap=lb.querySelector('.cap'),all=[].slice.call(document.querySelectorAll('[data-lb]')),cur=0;
+ function show(i){cur=(i+all.length)%all.length;li.src=all[cur].dataset.lb;li.alt=all[cur].querySelector('img').alt;cap.textContent=all[cur].dataset.cap+'  ('+(cur+1)+' / '+all.length+')';}
+ all.forEach(function(el,i){el.addEventListener('click',function(){show(i);lb.classList.add('on');document.body.style.overflow='hidden';lb.querySelector('.x').focus();});});
+ function close(){lb.classList.remove('on');document.body.style.overflow='';all[cur].focus();}
+ lb.querySelector('.x').onclick=close;lb.querySelector('.pv').onclick=function(){show(cur-1);};lb.querySelector('.nx').onclick=function(){show(cur+1);};
+ lb.addEventListener('click',function(e){if(e.target===lb)close();});
+ document.addEventListener('keydown',function(e){if(!lb.classList.contains('on'))return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1);});
+ var tx=0;lb.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;},{passive:true});lb.addEventListener('touchend',function(e){var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));});
+ // mapa po kliknieciu
+ document.getElementById('mapBtn').addEventListener('click',function(){document.getElementById('mapa').innerHTML='<iframe title="Mapa: EDU SUKCES, Bydgoszcz" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Adama+Grzyma%C5%82y+Siedleckiego+31,+85-868+Bydgoszcz&z=15&output=embed"></iframe>';});
+ // formularz pokazowy
+ document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block';});
+})();
+</script>
+</body>
+</html>
